@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useMemo } from "react";
 import axios from "axios";
 import "./App.css";
-import TaglineSection from "./TaglineSection";
 
 const api = axios.create({
   baseURL: "http://localhost:8000",
@@ -290,7 +289,7 @@ function App() {
             {error && <div className="error-msg">{error}</div>}
           </div>
           
-          <TaglineSection />
+         
 
           <div className="card list-card">
             <h2>Products</h2>
